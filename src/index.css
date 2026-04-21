@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:scale-105;
+  }
+  
+  .terminal {
+    @apply bg-dark-900 text-green-400 font-mono text-sm p-4 rounded-lg shadow-xl;
+  }
+  
+  .terminal-header {
+    @apply flex items-center justify-between mb-3 pb-2 border-b border-dark-700;
+  }
+  
+  .terminal-buttons {
+    @apply flex space-x-2;
+  }
+  
+  .terminal-button {
+    @apply w-3 h-3 rounded-full;
+  }
+  
+  .btn-close {
+    @apply bg-red-500 terminal-button;
+  }
+  
+  .btn-minimize {
+    @apply bg-yellow-500 terminal-button;
+  }
+  
+  .btn-maximize {
+    @apply bg-green-500 terminal-button;
+  }
+}
