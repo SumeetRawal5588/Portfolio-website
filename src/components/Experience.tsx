@@ -9,9 +9,9 @@ const Experience = () => {
       location: 'Chennai',
       period: 'June 2025 - Present',
       responsibilities: [
+        'Managing CI/CD pipelines and deployments for QA environments (automated builds, testing, and releases)',
         'Creating workflows for ERP, CRM & E-commerce integrations (Zoho, NetSuite, Shopify, Flipkart, Amazon, Salesforce)',
         'Managing API integrations (auth, scopes, error handling)',
-        'Documenting integration processes and managing issues related to connection failures and workflow bugs',
         'Ensure seamless integration between microservices and APIs'
       ],
       technologies: ['IPASS', 'Javascript', 'Databases', 'REST APIs']
@@ -45,7 +45,7 @@ const Experience = () => {
             Work Experience
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            My professional journey in DevOps and Cloud Engineering
+            My professional journey in Automation & DevOps
           </p>
         </motion.div>
 
