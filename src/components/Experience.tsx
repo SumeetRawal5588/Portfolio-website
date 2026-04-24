@@ -14,7 +14,7 @@ const Experience = () => {
         'Managing API integrations (auth, scopes, error handling)',
         'Ensure seamless integration between microservices and APIs'
       ],
-      technologies: ['IPASS', 'Javascript', 'Databases', 'REST APIs']
+      technologies: ['IPASS','Jenkins','Bitbucket', 'Javascript', 'Databases', 'REST APIs']
     },
     {
       title: 'QA Engineer Intern',
