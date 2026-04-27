@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+📌 About The Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal DevOps & Full Stack Portfolio Website built using modern web technologies. It showcases my projects, skills, and experience in cloud, DevOps, and web development.
 
-Currently, two official plugins are available:
+The goal of this project is to create a fast, responsive, and visually appealing portfolio that reflects my technical capabilities and real-world project experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+-------------------------------------------------------------------------------------------------------------------------------------
 
-## React Compiler
+⚙️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is built using a modern tech stack:
 
-## Expanding the ESLint configuration
+⚡ Next.js – React framework for performance & SSR
+🎨 Tailwind CSS – Utility-first styling
+🟦 TypeScript – Type-safe development
+🎬 Framer Motion – Smooth animations
+☁️ Vercel – Deployment & hosting
+📧 EmailJS – Contact form integration (send emails without backend)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+👉 Modern portfolio sites commonly use frameworks like Next.js, Tailwind, and Vercel for performance and scalability
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+✨ Features
+🌐 Fully responsive design (mobile + desktop)
+🎯 Clean and modern UI/UX
+🚀 Fast loading with optimized performance
+📂 Project showcase section
+📄 Resume / experience highlights
+📧 Contact form using EmailJS
+🎬 Smooth animations using Framer Motion
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+-------------------------------------------------------------------------------------------------------------------------------------
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🛠️ Installation & Setup
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Clone the repository:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+git clone https://github.com/SumeetRawal5588/Portfolio-website.git
+cd Portfolio-website
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm run dev
+🔐 Environment Variables
+
+Create a .env.local file and add your EmailJS credentials:
+
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+📧 Contact Integration (EmailJS)
+
+This project uses EmailJS to handle contact form submissions without needing a backend server.
+
+Sends emails directly from frontend
+Secure and easy to configure
+Perfect for portfolio websites
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+🚀 Deployment
+
+This project is deployed on Vercel:
+
+npm run build
+
+Or directly connect your GitHub repo to Vercel for automatic CI/CD deployment.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+🙋‍♂️ Author
+
+Sumeet Rawal
+
+DevOps Engineer | Cloud Enthusiast
